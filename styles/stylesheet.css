@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -11,6 +11,8 @@ header {
     background: #1f2937;
     display: flex;
     height: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 header > container > p {
@@ -22,7 +24,6 @@ header > container > p {
     height: auto;
     color: #f9faf8;
     flex: 1;
-    padding-left: 25px;
     display: flex;
     align-items: center;
 }
@@ -32,7 +33,6 @@ header > container > p {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding-right: 25px;
     gap: 25px;
     align-items: center;
 }
@@ -40,4 +40,55 @@ header > container > p {
 .header-links > a:visited {
     color: #f9faf8;
     text-decoration: none;
+}
+
+#Hero-Box {
+    background: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text > h1 {
+    font-size: 48px;   
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hero-text > p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hero-text > button {
+    font-size: 18px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    width: 150px;
+    height: 43px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%;
+    max-height: 400px;
+}
+
+.hero-image > img {
+    object-fit: cover;
+    width: 60%;
 }
