@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    /* border: 1px solid red; */
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -59,7 +59,7 @@ header > container > p {
 
 .hero-text > h1 {
     font-size: 48px;   
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
     margin-bottom: 10px;
 }
@@ -68,15 +68,16 @@ header > container > p {
     font-size: 18px;
     color: #e5e7eb;
     margin: 0;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .hero-text > button {
     font-size: 18px;
+    margin-top: 30px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 10px;
-    width: 150px;
+    width: 20%;
     height: 43px;
 }
 
@@ -84,11 +85,52 @@ header > container > p {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    max-width: 50%;
+    width: 50%;
     max-height: 400px;
 }
 
 .hero-image > img {
     object-fit: cover;
-    width: 60%;
+    width: 80%;
+}
+
+#Information-Box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.information-images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.information-images > div {
+    font-size: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.information-images > div > img {
+    object-fit: cover;
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+    border: 5px solid #3882f6;
 }
